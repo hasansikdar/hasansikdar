@@ -1,0 +1,144 @@
+body {
+    margin:0;
+    padding:0;
+    font-family:arial;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.header {
+    overflow:hidden;
+    padding:20px;
+}
+.container {
+    width:100%;
+    margin:auto;
+}
+.header ul {
+    text-align:right;
+    list-style:none;
+}
+.header ul li {
+    display:inline-block;
+}
+.header ul li a{
+    margin:10px 10px;
+    align-items:center;
+    color:black;
+    display:table;
+    text-decoration:none;
+    font-size:16px;
+
+}
+.header ul li a:last-child {
+    margin-bottom:9px;
+}
+.header ul li a img {
+    margin-bottom:-9px;
+}
+
+.header ul li a:hover {
+    text-decoration:underline;
+}
+.header svg {
+    height:20px;
+    width:50px;
+    cursor:pointer;
+}
+.header img {
+    height:30px;
+    width:30px;
+    border-radius:50%;
+}
+
+
+
+/* main-part */
+.logo {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.logo img {
+    width:25%;
+    padding:100px 0 20px;
+}
+.search-area {
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+}
+.search-area input {
+    padding:10px 10px;
+    width:90%;
+    border:none;
+}
+.search-area i:last-child {
+    float:right;
+    overflow:hidden;
+    margin-top:10px;
+}
+.search-area form {
+    border:1px solid rgba(255,255,255,0.4);
+    border-radius:25px;
+    padding:5px 20px;
+    margin:10px 0;
+    width:50%;
+    box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+.addicon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:40px auto;
+}
+.addicon ul {
+    list-style:none;
+    text-align:left;
+    width:40%;
+}
+.addicon ul li {
+    display:inline-block;
+    background:rgba(0,0,0,0.08);
+    border-radius:50%;
+    padding:12px;
+    text-align:center;
+    cursor:pointer;
+    margin:10px 20px;
+}
+.addicon ul li i {
+    font-size:24px;
+}
+.fa-youtube {color:red;}
+.fa-facebook {color:#1092F3;}
+.fa-instagram {color:#BB3A8D;}
+.fa-twitter {color:#1DA1F2;}
+.fa-m {color:#EA4335;}
+.fa-facebook-messenger {color:#D343B7;}
+
+
+
+
+
+@media all and (max-width:767px) {
+    .header ul {
+        text-align:center;
+    }
+    .logo img {
+        width:50%;
+        padding:60px 0 0px;
+    }
+    .search-area input {
+        width:80%;
+    }
+    .search-area form {
+        width:80%;
+    }
+    .addicon {
+        display:none;
+    }
+}
